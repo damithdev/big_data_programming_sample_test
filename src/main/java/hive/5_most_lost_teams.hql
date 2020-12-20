@@ -1,0 +1,1 @@
+select lose_team, count(lose_team) as lose_count from (select case when home_score > away_score then away_team else home_team end lose_team from matchdata) losses group by lose_team order by lose_count desc limit 5;

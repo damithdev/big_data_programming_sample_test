@@ -1,0 +1,1 @@
+select home_team,sum(home_score),sum(away_score) from matchdata group by home_team;

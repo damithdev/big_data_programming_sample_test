@@ -1,0 +1,1 @@
+select away_team , avg(away_score) as avg_score from matchdata group by away_team order by avg_score desc limit 10;
